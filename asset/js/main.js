@@ -8,7 +8,7 @@ var notif = document.getElementsByClassName("notif")[0];
 var notifText = notif.getElementsByClassName("text")[0];
 var notifReset = notif.getElementsByClassName("reset")[0];
 
-var servingDeck = 2;
+var servingDeck = 10;
 var turnKind = 1;
 var cekPemenang;
 var card,
