@@ -59,17 +59,20 @@ body{
     font-size: 30px;
     color:white;
     font-family: 'Poppins', sans-serif;
-    width:250px;
+    width:300px;
     text-align: center;
     padding:10px;
+    display:none;
 }
 .center .notif .text,.center .notif .reset{
     text-shadow: 0 0 30px #000000, 0 0 30px #000000;
 }
 
 .center .notif .reset{
+    margin-top:60px;
     color:rgb(255, 0, 0);
     cursor: pointer;
+    display:none;
 }
 
 .cover{

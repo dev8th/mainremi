@@ -274,9 +274,6 @@ function gameOver(){
     var comA = deckTop.getElementsByClassName("card").length;
     var pemB = deckBottom.getElementsByClassName("card").length;
 
-    console.log("Komputer : "+comA);
-    console.log("Pemain : "+pemB);
-
     if(comA==0||pemB==0){
         return true;
     }
@@ -314,7 +311,8 @@ function serveCard(){
 
     //NOTIFIKASI
     setTimeout(() => {
-        notifMaker(0);
+        notifMaker(2);
+        sortingCard();
     }, time += 1400);
 }
 
@@ -553,6 +551,8 @@ function takeCloseDeck(id,gameTurn){
             clickCard(card);
         });
 
+        sortingCard();
+
     //JIKA PEMROSES ADALAH KOMPUTER
     }else{
 
@@ -568,6 +568,29 @@ function takeCloseDeck(id,gameTurn){
     theCard.splice(randomNum,1);
 
     }, time+=500);
+}
+
+function sortingCard(){
+    var order = 1;
+    var sort = deckBottom.getElementsByClassName("card");
+    var arraySimbol = [
+        "♦","♣","♥","♠"
+    ];
+    for(var a = 0;a<arraySimbol.length;a++){
+        for(var i = 2;i<=14;i++){
+            Object.keys(sort).forEach(element => {
+                var simbol = sort[element].getAttribute("simbol");
+                var tingkatan = sort[element].getAttribute("tingkatan");
+                    if(arraySimbol[a]==simbol){
+                        if(tingkatan==i){
+                            sort[element].style.order=order;
+                            sort[element].style.zIndex=order;
+                            order++;
+                        }
+                    }      
+            });
+        }
+    }
 }
 
 function resetCloseDeck(){
