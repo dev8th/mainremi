@@ -4,10 +4,10 @@ body{
     padding: 0;
     margin: 0;
     height:100vh;
-    background: hsla(351, 100%, 25%, 1);
-    background: linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(351, 100%, 25%, 1) 0%, hsla(9, 59%, 7%, 1) 100%);
+    background: rgb(11, 0, 128);
+    background: linear-gradient(90deg, rgb(11, 0, 128) 0%, rgb(5, 1, 40) 100%);
+    background: -moz-linear-gradient(90deg, rgb(11, 0, 128) 0%, rgb(5, 1, 40) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(11, 0, 128) 0%, rgb(5, 1, 40) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7F0012", endColorstr="#1B0A07", GradientType=1 );
 }
 

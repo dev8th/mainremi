@@ -27,8 +27,8 @@ selectedCard_arrayId,
 selectedCard_tingkatan;
 
 var player = [
-    ["Pemain","Fase Pemain"],
-    ["Komputer","Fase Komputer"]
+    ["Pemain","Giliran Pemain"],
+    ["Komputer","Giliran Komputer"]
 ];
 var theCard = [
     ["A","♠",14],
